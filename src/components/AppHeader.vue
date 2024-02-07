@@ -105,23 +105,23 @@
 
                 li{
                     list-style-type: none;
-                    font-size: 0.7em;
+                    font-size: 0.9em;
 
                     a{
                         text-decoration: none;
                         color: black;
                         height: 100% ;
-                        padding-bottom: 4.6em;
+                        padding-bottom: 3.3em;
 
                         &:hover{
                             color: #207CEC;
-                            border-bottom: 0.4em solid #207CEC  ;
+                            border-bottom: 0.5em solid #207CEC  ;
                         }
                     }   
 
                     .active{
                             color: #207CEC;
-                            border-bottom: 0.4em solid #207CEC  ;
+                            border-bottom: 0.5em solid #207CEC  ;
                         }
                 }
 
