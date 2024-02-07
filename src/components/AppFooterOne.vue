@@ -48,10 +48,11 @@
     }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@use '../styles/partials/_variables.scss' as *; 
 
     .footer{
-        background-color: #207CEC;
+        background-color: $blue;
 
         .container{
             width: 80%;

@@ -46,9 +46,11 @@
     }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@use '../styles/partials/_variables.scss' as *; 
+
     .bg-dark{
-        background-color: #303030;
+        background-color: $dark;
 
         .container{
             width: 80%; 
@@ -63,7 +65,7 @@
                     color: white;
                     text-decoration: none;
                     padding: 0.5em;
-                    border: 0.2em solid #2282F9;
+                    border: 0.2em solid $blue;
 
                     &:hover{
                         opacity: 0.8;
@@ -77,7 +79,7 @@
                 align-items: center;
 
                 .blue{
-                    color:#2282F9; 
+                    color:$blue; 
                     font-size: 1.5em;
                 }
             }

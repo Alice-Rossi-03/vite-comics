@@ -12,7 +12,7 @@
                             {{ element.name }}
                         </a>
                     </li>
-                </ul>
+                </ul> 
             </div>
         </div>
     </header>
@@ -80,12 +80,13 @@
         }
     }
 
-</script>
+</script> 
 
-<style scoped>
+<style scoped lang="scss">
+@use '../styles/partials/_variables.scss' as *; 
 
     .bg-white{
-        background-color: white;
+        background-color: $white;
 
         .container{
             width: 80%;
@@ -109,19 +110,19 @@
 
                     a{
                         text-decoration: none;
-                        color: black;
+                        color: $black;
                         height: 100% ;
                         padding-bottom: 3.3em;
 
                         &:hover{
-                            color: #207CEC;
-                            border-bottom: 0.5em solid #207CEC  ;
+                            color: $blue;
+                            border-bottom: 0.5em solid $blue;
                         }
                     }   
 
                     .active{
-                            color: #207CEC;
-                            border-bottom: 0.5em solid #207CEC  ;
+                            color: $blue;
+                            border-bottom: 0.5em solid $blue;
                         }
                 }
 

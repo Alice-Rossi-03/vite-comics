@@ -70,7 +70,10 @@
     }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@use '../styles/partials/_variables.scss' as *; 
+
+
     .footer{
         background-image: url(../assets/img/footer-bg.jpg);
         background-repeat: no-repeat;
@@ -91,7 +94,7 @@
             }
 
             .lists-container{
-                padding-top: 4em;
+                padding-top: 3em;
                 display: flex;
                 gap: 3.5em;
 
@@ -101,15 +104,17 @@
                         margin-bottom: 2em;
 
                         h3{
-                            color: white;
+                            color: $white;
                             margin-bottom: 0.5em;
                         }
 
                         ul{
                             li{
                                 list-style-type: none;
-                                color: gray; 
+                                color: $gray; 
                                 margin-bottom: 0.2em;
+                                font-family: 'PT Sans Narrow', sans-serif;
+                                font-weight: 400;
                             }
                         }
                     }

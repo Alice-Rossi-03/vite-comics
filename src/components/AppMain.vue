@@ -15,10 +15,11 @@
     }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@use '../styles/partials/_variables.scss' as *; 
 
     main{
-        background-color: black;
+        background-color: $black;
 
         .container{
             width: 80%;
