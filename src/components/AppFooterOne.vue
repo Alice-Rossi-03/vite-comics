@@ -64,6 +64,7 @@
 
                 display: flex;
                 gap: 2em;
+                justify-content: center;
 
                 .container-mini-flex{
                     display: flex;
