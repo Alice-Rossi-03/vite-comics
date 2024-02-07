@@ -8,7 +8,7 @@
 
                 <ul>
                     <li v-for="(element, index) in navBarList" :key="index">
-                        <a href="element.path">
+                        <a href="element.path" :class="(element.current) ? 'active' : '' ">
                             {{ element.name }}
                         </a>
                     </li>
@@ -63,7 +63,7 @@
                     }, 
                     {
                         name: 'FANS' ,
-                        current: true
+                        current: false
                     }, 
                     {
                         name: 'NEWS' ,
@@ -84,6 +84,51 @@
 
 <style scoped>
 
+    .bg-white{
+        background-color: white;
 
+        .container{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 8em;
+
+            figure{
+                align-self: center;
+            }
+
+            ul{
+                display: flex;
+                gap: 1em;
+
+                li{
+                    list-style-type: none;
+                    font-size: 0.7em;
+
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        height: 100% ;
+                        padding-bottom: 4.6em;
+
+                        &:hover{
+                            color: #207CEC;
+                            border-bottom: 0.4em solid #207CEC  ;
+                        }
+                    }   
+
+                    .active{
+                            color: #207CEC;
+                            border-bottom: 0.4em solid #207CEC  ;
+                        }
+                }
+
+            }
+        }
+
+
+    }
 
 </style>
