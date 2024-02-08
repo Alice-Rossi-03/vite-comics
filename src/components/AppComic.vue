@@ -11,7 +11,7 @@
 <template>
    
     <div class="comic">
-        <img :src="img" alt="">
+        <img :src="img" :alt="title">
         <div class="title">{{ title }}</div>
     </div>
  
@@ -19,6 +19,8 @@
 </template>
 
 <style scoped lang="scss">
+@use '../styles/partials/_variables.scss' as *; 
+
     .container{
         
 
@@ -33,7 +35,7 @@
             }
 
             .title{
-                color: white;
+                color: $white;
                 text-align: center;
             }
         }

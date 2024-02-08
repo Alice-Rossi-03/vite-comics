@@ -91,6 +91,9 @@
 
 <template>
     <div class="container">
+
+        <div class="current-series">CURRENT SERIES</div>
+
         <AppComic v-for="(element, index) in arrayComics" :key="index" 
         :img="element.thumb"
         :title="element.series"/> 
@@ -113,15 +116,28 @@
         flex-wrap: wrap;
         gap: 1em;
         background-color: $black;
-
         justify-content: center;
+        position: relative;
         // align-items: center;
+        .current-series{
+            position: absolute;
+            top: -1.1em; 
+            left: -0.4em;
+            background-color: $blue;
+            padding: 0.5em 2em;
+            color: $white;
+            font-size: 1.3em;
+        }
 
         a{
             text-decoration: none;
             color: $white;
             background-color: $blue;
             padding: 0.6em 2em;
+
+            &:hover{
+                opacity: 0.8;
+            }
         }
     }
 </style>
