@@ -29,12 +29,12 @@
                     {
                         name: 'CHARACTERS' ,
                         path: '#', 
-                        current: true
+                        current: false
                     }, 
                     {
                         name: 'COMICS' ,
                         path: '#', 
-                        current: false
+                        current: true
                     }, 
                     {
                         name: 'MOVIES' ,

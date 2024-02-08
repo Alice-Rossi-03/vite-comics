@@ -1,34 +1,29 @@
+<script>
+    import AppJumbotron from '../components/inner-main-components/AppJumbotron.vue'
+    import AppComics from '../components/inner-main-components/AppComics.vue'
+    
+    export default{
+        name: 'AppMain',
+        components: {
+            AppJumbotron,
+            AppComics
+        }
+    }
+</script>
+
 <template>
     <main>
-        <div class="container">
-            <div>
-                -- Content -- 
-            </div>
-        </div>
+        <AppJumbotron/>
+        <AppComics/>
     </main>
     
 </template>
-
-<script>
-    export default{
-        name: 'AppMain'
-    }
-</script>
 
 <style scoped lang="scss">
 @use '../styles/partials/_variables.scss' as *; 
 
     main{
         background-color: $black;
-
-        .container{
-            width: 80%;
-            padding-block: 3em;
-            color: white;
-            margin: 0 auto;
-            font-size: 1.5em;
-        }
-
     }
 
 </style>

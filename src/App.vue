@@ -6,7 +6,6 @@ import AppFooterTwo from './components/AppFooterTwo.vue'
 import AppFooterThree from './components/AppFooterThree.vue'
 
 
-AppFooterThree
 
 export default{
     components: {
