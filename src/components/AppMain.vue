@@ -23,7 +23,7 @@
 @use '../styles/partials/_variables.scss' as *; 
 
     main{
-        background-color: $black;
+        background-color: $darker;
     }
 
 </style>

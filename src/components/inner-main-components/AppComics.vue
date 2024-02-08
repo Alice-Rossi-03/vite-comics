@@ -115,7 +115,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 1em;
-        background-color: $black;
+        background-color: $darker;
         justify-content: center;
         position: relative;
         // align-items: center;
